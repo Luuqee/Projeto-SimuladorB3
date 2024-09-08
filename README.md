@@ -5,7 +5,7 @@
 
 ## 📋 Descrição
 
-Este projeto é um simulador de investimentos desenvolvido como parte do curso de Backend em Java. O simulador permite que o usuário gerencie uma carteira de investimentos na B3, a bolsa de valores do Brasil. O projeto foi desenvolvido com foco em conceitos de Programação Orientada a Objetos (POO), aplicando Design de Classes de Domínio, Separação em Camadas, Transição de Estados e Testes.
+Este projeto é um simulador de investimentos desenvolvido como parte do curso de Backend em Java do projeto B3 Inclua+ com a Ada Tech. O simulador permite que o usuário gerencie uma carteira de investimentos na B3, a bolsa de valores do Brasil. O projeto foi desenvolvido com foco em conceitos de Programação Orientada a Objetos (POO), aplicando Design de Classes de Domínio, Separação em Camadas, Transição de Estados e Testes.
 
 ## 🚀 Funcionalidades
 
