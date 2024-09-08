@@ -14,5 +14,5 @@ public class Acao extends Investimento {
         this.dataAquisicao = dataAquisicao;
     }
 
-    // Getters e Setters
+    // gets e sets (futuros)
 }
