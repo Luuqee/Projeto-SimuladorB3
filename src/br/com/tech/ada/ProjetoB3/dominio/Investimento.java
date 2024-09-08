@@ -1,4 +1,13 @@
 package br.com.tech.ada.ProjetoB3.dominio;
 
-public class Investimento {
+public abstract class Investimento {
+    private double valorAtual;
+
+    public Investimento(double valorAtual) {
+        this.valorAtual = valorAtual;
+    }
+
+    public double getValor() {
+        return valorAtual;
+    }
 }
