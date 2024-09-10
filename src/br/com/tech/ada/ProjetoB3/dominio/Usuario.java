@@ -2,16 +2,26 @@ package br.com.tech.ada.ProjetoB3.dominio;
 
 public class Usuario {
     private String nome;
-    private Carteira carteira;
+    private double saldo;
 
-    public Usuario(String nome) {
+    public Usuario(String nome, double saldo) {
         this.nome = nome;
-        this.carteira = new Carteira();
+        this.saldo = saldo;
     }
 
-    public Carteira getCarteira() {
-        return carteira;
+    public String getNome() {
+        return nome;
     }
 
-    // Getter e Setter para nome
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }
