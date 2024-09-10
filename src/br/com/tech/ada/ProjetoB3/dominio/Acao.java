@@ -14,5 +14,19 @@ public class Acao extends Investimento {
         this.dataAquisicao = dataAquisicao;
     }
 
-    // gets e sets (futuros)
+    public void atualizarValor(double novoValor) {
+        setValor(novoValor);  // Método herdado de Investimento
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getTicker() {
+        return ticker;
+    }
+
+    public LocalDate getDataAquisicao() {
+        return dataAquisicao;
+    }
 }

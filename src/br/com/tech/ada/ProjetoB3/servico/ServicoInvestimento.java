@@ -18,4 +18,8 @@ public class ServicoInvestimento {
     public double calcularValorTotalCarteira() {
         return usuario.getCarteira().calcularValorTotal();
     }
+
+    public void atualizarValorInvestimento(Investimento investimento, double novoValor) {
+        investimento.setValor(novoValor);
+    }
 }

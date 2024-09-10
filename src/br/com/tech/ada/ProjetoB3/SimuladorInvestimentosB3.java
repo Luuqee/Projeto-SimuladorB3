@@ -19,7 +19,11 @@ public class SimuladorInvestimentosB3 {
         servico.adicionarInvestimento(acao1);
         servico.adicionarInvestimento(fundo1);
 
+        // Atualizar o valor da ação
+        servico.atualizarValorInvestimento(acao1, 35.00);
+
+        // Calcular o valor total da carteira após a atualização
         double valorTotal = servico.calcularValorTotalCarteira();
-        System.out.println("Valor total da carteira: R$ " + valorTotal);
+        System.out.println("Valor total da carteira após atualização: R$ " + valorTotal);
     }
 }

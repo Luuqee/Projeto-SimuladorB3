@@ -10,4 +10,8 @@ public abstract class Investimento {
     public double getValor() {
         return valorAtual;
     }
+
+    public void setValor(double valorAtual) {
+        this.valorAtual = valorAtual;
+    }
 }

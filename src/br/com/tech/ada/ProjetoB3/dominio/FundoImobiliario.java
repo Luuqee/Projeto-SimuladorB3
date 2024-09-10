@@ -14,5 +14,19 @@ public class FundoImobiliario extends Investimento {
         this.dataAquisicao = dataAquisicao;
     }
 
-    // gets e sets
+    public void atualizarValor(double novoValor) {
+        setValor(novoValor);  // Método herdado de Investimento
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getRendimento() {
+        return rendimento;
+    }
+
+    public LocalDate getDataAquisicao() {
+        return dataAquisicao;
+    }
 }

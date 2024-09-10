@@ -14,6 +14,13 @@ public class Carteira {
         this.investimentos.add(investimento);
     }
 
+    // Método para atualizar o valor de um investimento específico
+    public void atualizarValorInvestimento(Investimento investimento, double novoValor) {
+        if (investimento != null) {
+            investimento.setValor(novoValor);
+        }
+    }
+
     public double calcularValorTotal() {
         double valorTotal = 0.0;
         for (Investimento investimento : investimentos) {
