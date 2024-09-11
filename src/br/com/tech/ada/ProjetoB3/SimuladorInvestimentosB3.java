@@ -15,7 +15,7 @@ public class SimuladorInvestimentosB3 {
         while (true) {
             mostrarMenu();
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar o buffer
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
@@ -41,7 +41,7 @@ public class SimuladorInvestimentosB3 {
                     break;
                 case 8:
                     System.out.println("Saindo...");
-                    return; // Encerra o programa
+                    return;
                 default:
                     System.out.println("Opção inválida, tente novamente.");
             }
@@ -66,7 +66,7 @@ public class SimuladorInvestimentosB3 {
         String nome = scanner.nextLine();
         System.out.print("Digite o saldo inicial do usuário: ");
         double saldo = scanner.nextDouble();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         usuarioAtual = new Usuario(nome, saldo);
         System.out.println("Usuário cadastrado com sucesso!");
     }
@@ -89,7 +89,7 @@ public class SimuladorInvestimentosB3 {
         double valor = scanner.nextDouble();
         System.out.print("Digite o ticker da ação: ");
         String ticker = scanner.next();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         Acao acao = new Acao(nome, valor, ticker, LocalDate.now(), usuarioAtual);
         empresaAtual.adicionarAcao(acao);
         System.out.println("Ação cadastrada com sucesso!");
@@ -106,7 +106,7 @@ public class SimuladorInvestimentosB3 {
         LocalDate data = LocalDate.parse(scanner.nextLine());
         System.out.print("Digite o valor da variação: ");
         double valor = scanner.nextDouble();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         empresaAtual.registrarVariacaoPreco(ticker, data, valor);
         System.out.println("Variação de preço registrada com sucesso!");
     }
@@ -140,7 +140,7 @@ public class SimuladorInvestimentosB3 {
         }
         System.out.print("Digite a quantidade a investir: ");
         double valor = scanner.nextDouble();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         if (usuarioAtual.getSaldo() < valor) {
             System.out.println("Saldo insuficiente.");
             return;
